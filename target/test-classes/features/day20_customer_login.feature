@@ -5,12 +5,12 @@ Feature: customer_login_feature
 
     Given user opens the URL "https://www.bluerentalcars.com/"
     When user navigate the login page
-    And user enters username as "<username>" and password as "<password>" and click on login button
+    And user enters username as "<string>" and password as "<password>" and click on login button
     Then verify the login is successful
     Then close the application
 
     Examples: test_data
-    |username                     |password  |
+    |string                     |password  |
     |customer@bluerentalcars.com  |12345     |
     |customer1@bluerentalcars.com |12346     |
     |customer2@bluerentalcars.com |12347     |

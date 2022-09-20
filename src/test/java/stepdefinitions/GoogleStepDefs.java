@@ -44,4 +44,25 @@ public class GoogleStepDefs {
         Assert.assertTrue(Driver.getDriver().getTitle().contains("TeaPot"));
     }
 
+    @Given("user opens the URL {string}")
+    public void user_opens_the_url(String string) {
+
+        Driver.getDriver().get(string);
+        try{
+            googlePage.popUpOkButton.click();
+        }catch (Exception e){
+//            e.printStackTrace();
+        }
+    }
+    @Given("user search for {string} on the google")
+    public void user_search_for_on_the_google(String string) {
+
+        googlePage.searchBox.sendKeys(string+Keys.ENTER);
+    }
+
+    @Then("verify the page title contains {string}")
+    public void verify_the_page_title_contains(String string) {
+        Assert.assertTrue(Driver.getDriver().getTitle().contains(string));
+    }
+
 }
