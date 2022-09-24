@@ -1,10 +1,14 @@
 package stepdefinitions;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import pages.HomePage;
 import pages.LoginPage;
+
+import java.util.List;
+import java.util.Map;
 
 public class AppLoginStepDefs {
 
@@ -31,4 +35,31 @@ public class AppLoginStepDefs {
         Assert.assertTrue(homePage.userID.isDisplayed());
 
     }
+
+    @When("user enters manager_username and manager_password")
+    public void user_enters_manager_username_and_manager_password(DataTable credentials) {
+
+////        1. get the feature file data as LIST
+//        List<String> customerData = credentials.row(1);//row number starts at 0. our data is in row 1
+////        System.out.println(customerData.get(0));//customer@bluerentalcars.com
+////        System.out.println(customerData.get(1));//12345
+//        loginPage.username.sendKeys(customerData.get(0));
+//        loginPage.password.sendKeys(customerData.get(1));
+//        loginPage.loginButton.click();
+
+//        2. get the feature file data as List<Map<String,String>>
+        List<Map<String,String>> customerCredentials = credentials.asMaps(String.class,String.class);
+        System.out.println(customerCredentials);
+
+        for (Map<String,String> each : customerCredentials){
+            loginPage.username.sendKeys(each.get("username"));
+            loginPage.password.sendKeys(each.get("password"));
+            loginPage.loginButton.click();
+
+        }
+
+
+    }
+
+
 }

@@ -23,9 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d13fda7e-0377-42ae-8444-60b700028212" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/AppLoginStepDefs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ReusableStepDefs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/extent-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/extent.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/day21_data_tables.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/day22_failed_scenario_test.feature" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../mytestNGproject/configuration.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../mytestNGproject/src/test/java/techproed/tests/Day13_TestNGAnnotation.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../mytestNGproject/src/test/java/techproed/tests/Day14_DependsOnMethods.java" afterDir="false" />
@@ -79,15 +82,29 @@
       <change beforePath="$PROJECT_DIR$/../mycucumberframework3/src/test/java/utilities/ReusableMethods.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../mycucumberframework3/src/test/resources/features/US1000 Google search test.feature" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../mycucumberframework3/src/test/resources/features/US1001_user_should_add_data.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/AppLoginStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/AppLoginStepDefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/GoogleStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/GoogleStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/day20_customer_login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/day20_customer_login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/GoogleStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefinitions/GoogleStepDefs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/day20_scenario_outline1.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/day20_scenario_outline1.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/day19_first_feature_file.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/day20_customer_login.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/day20_parameterizing_feature_file.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/day20_scenario_outline1.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/GooglePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/HomePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LoginPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/Runner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/AppLoginStepDefs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/GoogleStepDefs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ConfigReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../mycuke/mycuke.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../myjunitproject-21/src/test/java/com/techproed/Day06_JavaFaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myjunitproject-21/src/test/java/com/techproed/Day06_JavaFaker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mymavenproject1/.gitignore" beforeDir="false" />
@@ -164,7 +181,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: day20_customer_login">
+  <component name="RunManager" selected="JUnit.Runner">
     <configuration name="Feature: day20_customer_login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/day20_customer_login.feature" />
@@ -184,14 +201,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: day20_parameterizing_feature_file" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: day20_scenario_outline1" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/day20_parameterizing_feature_file.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/day20_scenario_outline1.feature" />
       <option name="GLUE" value="stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="mycucumberproject" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: day20_parameterizing_feature_file" />
+      <option name="SUGGESTED_NAME" value="Feature: day20_scenario_outline1" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -203,15 +220,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: TC02_teapot_search" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC_01" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/day19_first_feature_file.feature" />
-      <option name="GLUE" value="stepdefinitions" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/day22_failed_scenario_test.feature" />
+      <option name="GLUE" value="stepdefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="mycucumberproject" />
-      <option name="NAME_FILTER" value="^TC02_teapot_search$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC02_teapot_search$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC02_teapot_search" />
+      <option name="NAME_FILTER" value="^TC_01$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_01$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_01" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -223,15 +240,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: login_with_customer_credentials" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: customer_login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/day20_customer_login.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/day21_data_tables.feature" />
       <option name="GLUE" value="stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="mycucumberproject" />
-      <option name="NAME_FILTER" value="^login_with_customer_credentials$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^login_with_customer_credentials$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: login_with_customer_credentials" />
+      <option name="NAME_FILTER" value="^customer_login$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^customer_login$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: customer_login" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -260,11 +277,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: day20_customer_login" />
         <item itemvalue="JUnit.Runner" />
-        <item itemvalue="Cucumber Java.Scenario: login_with_customer_credentials" />
-        <item itemvalue="Cucumber Java.Feature: day20_parameterizing_feature_file" />
-        <item itemvalue="Cucumber Java.Scenario: TC02_teapot_search" />
+        <item itemvalue="Cucumber Java.Scenario: TC_01" />
+        <item itemvalue="Cucumber Java.Feature: day20_scenario_outline1" />
+        <item itemvalue="Cucumber Java.Scenario: customer_login" />
+        <item itemvalue="Cucumber Java.Feature: day20_customer_login" />
       </list>
     </recent_temporary>
   </component>
@@ -301,33 +318,33 @@
     </state>
     <state x="1479" y="582" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.25.2560.1415/2560.25.1920.1055@0.25.2560.1415" timestamp="1663442927711" />
     <state x="1509" y="582" width="597" height="312" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/72.25.2488.1415/2560.25.1920.1055@72.25.2488.1415" timestamp="1663442521609" />
-    <state width="1914" height="3" key="GridCell.Tab.0.bottom" timestamp="1663638838372">
+    <state width="2352" height="15" key="GridCell.Tab.0.bottom" timestamp="1664035681848">
       <screen x="72" y="25" width="2488" height="1415" />
     </state>
     <state width="2508" height="3" key="GridCell.Tab.0.bottom/0.25.2560.1415/2560.25.1920.1055@0.25.2560.1415" timestamp="1663519594839" />
-    <state width="2508" height="60" key="GridCell.Tab.0.bottom/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1663638726547" />
-    <state width="1914" height="3" key="GridCell.Tab.0.bottom/2560.25.1920.1055/72.25.2488.1415@72.25.2488.1415" timestamp="1663638838372" />
+    <state width="2508" height="171" key="GridCell.Tab.0.bottom/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1663724334411" />
+    <state width="2352" height="15" key="GridCell.Tab.0.bottom/2560.25.1920.1055/72.25.2488.1415@72.25.2488.1415" timestamp="1664035681848" />
     <state width="2436" height="3" key="GridCell.Tab.0.bottom/72.25.2488.1415/2560.25.1920.1055@72.25.2488.1415" timestamp="1663520116086" />
-    <state width="1914" height="3" key="GridCell.Tab.0.center" timestamp="1663638838371">
+    <state width="2352" height="15" key="GridCell.Tab.0.center" timestamp="1664035681848">
       <screen x="72" y="25" width="2488" height="1415" />
     </state>
     <state width="2508" height="3" key="GridCell.Tab.0.center/0.25.2560.1415/2560.25.1920.1055@0.25.2560.1415" timestamp="1663519594838" />
-    <state width="2508" height="60" key="GridCell.Tab.0.center/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1663638726531" />
-    <state width="1914" height="3" key="GridCell.Tab.0.center/2560.25.1920.1055/72.25.2488.1415@72.25.2488.1415" timestamp="1663638838371" />
+    <state width="2508" height="171" key="GridCell.Tab.0.center/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1663724334410" />
+    <state width="2352" height="15" key="GridCell.Tab.0.center/2560.25.1920.1055/72.25.2488.1415@72.25.2488.1415" timestamp="1664035681848" />
     <state width="2436" height="3" key="GridCell.Tab.0.center/72.25.2488.1415/2560.25.1920.1055@72.25.2488.1415" timestamp="1663520116086" />
-    <state width="1914" height="3" key="GridCell.Tab.0.left" timestamp="1663638838371">
+    <state width="2352" height="15" key="GridCell.Tab.0.left" timestamp="1664035681847">
       <screen x="72" y="25" width="2488" height="1415" />
     </state>
     <state width="2508" height="3" key="GridCell.Tab.0.left/0.25.2560.1415/2560.25.1920.1055@0.25.2560.1415" timestamp="1663519594838" />
-    <state width="2508" height="60" key="GridCell.Tab.0.left/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1663638726526" />
-    <state width="1914" height="3" key="GridCell.Tab.0.left/2560.25.1920.1055/72.25.2488.1415@72.25.2488.1415" timestamp="1663638838371" />
+    <state width="2508" height="171" key="GridCell.Tab.0.left/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1663724334410" />
+    <state width="2352" height="15" key="GridCell.Tab.0.left/2560.25.1920.1055/72.25.2488.1415@72.25.2488.1415" timestamp="1664035681847" />
     <state width="2436" height="3" key="GridCell.Tab.0.left/72.25.2488.1415/2560.25.1920.1055@72.25.2488.1415" timestamp="1663520116086" />
-    <state width="1914" height="3" key="GridCell.Tab.0.right" timestamp="1663638838372">
+    <state width="2352" height="15" key="GridCell.Tab.0.right" timestamp="1664035681848">
       <screen x="72" y="25" width="2488" height="1415" />
     </state>
     <state width="2508" height="3" key="GridCell.Tab.0.right/0.25.2560.1415/2560.25.1920.1055@0.25.2560.1415" timestamp="1663519594839" />
-    <state width="2508" height="60" key="GridCell.Tab.0.right/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1663638726537" />
-    <state width="1914" height="3" key="GridCell.Tab.0.right/2560.25.1920.1055/72.25.2488.1415@72.25.2488.1415" timestamp="1663638838372" />
+    <state width="2508" height="171" key="GridCell.Tab.0.right/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1663724334411" />
+    <state width="2352" height="15" key="GridCell.Tab.0.right/2560.25.1920.1055/72.25.2488.1415@72.25.2488.1415" timestamp="1664035681848" />
     <state width="2436" height="3" key="GridCell.Tab.0.right/72.25.2488.1415/2560.25.1920.1055@72.25.2488.1415" timestamp="1663520116086" />
     <state x="664" y="280" key="SettingsEditor" timestamp="1663635526359">
       <screen x="0" y="25" width="2560" height="1415" />

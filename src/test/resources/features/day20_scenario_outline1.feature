@@ -8,6 +8,7 @@ Feature: Scenario_outline
 
       Given user search for "<item>" on the google
       Then verify the page title contains "<item>"
+      And capture the screenshot
       Then close the application
 
 

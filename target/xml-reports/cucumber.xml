@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="20.759">
+<testcase classname="failed_test_cases" name="TC_01" time="20.626">
+<failure message="" type="java.lang.AssertionError"><![CDATA[Given user is on the google page............................................passed
+And user search for "iphone" on the google..................................passed
+Then verify test case fails.................................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.GoogleStepDefs.verify_test_case_fails(GoogleStepDefs.java:71)
+	at ✽.verify test case fails(file:///Users/techproed/IdeaProjects/mycucumberproject/./src/test/resources/features/day22_failed_scenario_test.feature:7)
+]]></failure>
+</testcase>
+</testsuite>

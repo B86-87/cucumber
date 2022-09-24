@@ -8,13 +8,15 @@ Feature: Scenario_outline
 
       Given user search for "<item>" on the google
       Then verify the page title contains "<item>"
+      And capture the screenshot
       Then close the application
 
 
       Examples: test_data
       |item|
-      |mercedes|
+      |mercedes benz|
       |tesla   |
       |sdet  |
       |QA Automation Engineer  |
       |bmw     |
+      |selenium webdriver jobs|
