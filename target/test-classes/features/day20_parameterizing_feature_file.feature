@@ -1,4 +1,4 @@
-@parameterized1
+@parameterized1 @regression_tests
 Feature: Google_Search
 
   Background: User_goes_to_google

@@ -1,3 +1,4 @@
+@regression_tests
 Feature: FE341_US3412_login_with_customer_credentials
 
   @customer_excel

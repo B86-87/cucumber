@@ -1,24 +1,64 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="35.987">
-<testcase classname="Search Feature" name="TC01_iphone_search" time="17.877">
-<system-out><![CDATA[Given user is on the google page............................................passed
-When user search for iPhone on google.......................................passed
-Then verify the page title contains iPhone..................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="78.573">
+    <testcase classname="Google_Search" name="TC01_mercedes_search" time="17.117">
+        <system-out><![CDATA[Given user opens the URL "https://www.google.com"...........................passed
+Given user search for "mercedes" on the google..............................passed
+Then verify the page title contains "mercedes"..............................passed
 Then close the application..................................................passed
 ]]></system-out>
-</testcase>
-<testcase classname="failed_test_cases" name="TC_01" time="17.924">
-<failure message="" type="java.lang.AssertionError"><![CDATA[Given user is on the google page............................................passed
-And user search for "iphone" on the google..................................passed
-Then verify test case fails.................................................failed
+    </testcase>
+    <testcase classname="Google_Search" name="TC02_tesla_search" time="15.217">
+        <system-out><![CDATA[Given user opens the URL "https://www.google.com"...........................passed
+Given user search for "tesla" on the google.................................passed
+Then verify the page title contains "tesla".................................passed
+Then close the application..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Google_Search" name="TC03_tesla_search" time="15.198">
+        <system-out><![CDATA[Given user opens the URL "https://www.google.com"...........................passed
+Given user search for "sdet" on the google..................................passed
+Then verify the page title contains "sdet"..................................passed
+Then close the application..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Google_Search" name="TC04_tesla_search" time="15.284">
+        <system-out><![CDATA[Given user opens the URL "https://www.google.com"...........................passed
+Given user search for "QA Automation Engineer" on the google................passed
+Then verify the page title contains "QA Automation Engineer"................passed
+Then close the application..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="FE341_US3412_login_with_customer_credentials" name="TC01_login_with_customer" time="15.59">
+        <failure message="Keys to send should be a not null CharSequence" type="java.lang.IllegalArgumentException"><![CDATA[Given user tries to login as "customer".....................................failed
+Then verify the login is successful.........................................skipped
+Then capture the screenshot.................................................skipped
+Then close the application..................................................skipped
 
 StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepdefinitions.GoogleStepDefs.verify_test_case_fails(GoogleStepDefs.java:71)
-	at ✽.verify test case fails(file:///Users/techproed/IdeaProjects/mycucumberproject/src/test/resources/features/day22_failed_scenario_test.feature:7)
+java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.sendKeys(Unknown Source)
+	at stepdefinitions.ExcelStepDefs.user_tries_to_login_as(ExcelStepDefs.java:74)
+	at ✽.user tries to login as "customer"(file:///Users/techproed/IdeaProjects/mycucumberproject/./src/test/resources/features/day22_excel_automation.feature:7)
 ]]></failure>
-</testcase>
+    </testcase>
+</testsuite>
+the page title contains "bmw"...................................passed
+And capture the screenshot..................................................passed
+Then close the application..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Scenario_outline" name="Google_Search_6" time="17.124">
+        <system-out><![CDATA[Given user opens the URL "https://www.google.com"...........................passed
+Given user search for "selenium webdriver jobs" on the google...............passed
+Then verify the page title contains "selenium webdriver jobs"...............passed
+And capture the screenshot..................................................passed
+Then close the application..................................................passed
+]]></system-out>
+    </testcase>
 </testsuite>

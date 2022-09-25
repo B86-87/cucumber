@@ -61,7 +61,7 @@ public class ExcelStepDefs {
 //        path of customer sheet
         String path = "./src/test/resources/testdata/mysmoketestdata.xlsx";
 //        customer sheet name
-        String customerSheet ="customer_info";
+        String customerSheet ="admin_info";
 //        Use Excel Util
         excelUtil = new ExcelUtil(path,customerSheet);
 //        getting the data from the excel using excel util method
@@ -71,7 +71,7 @@ public class ExcelStepDefs {
             login();
 //            Not that we are on login page, we can send username, password, and click on login button
             ReusableMethods.waitFor(1);
-            loginPage.username.sendKeys(eachData.get("username"));
+            loginPage.username.sendKeys(eachData.get("address"));
             ReusableMethods.waitFor(1);
             loginPage.password.sendKeys(eachData.get("password").substring(0,5));
             ReusableMethods.waitFor(1);

@@ -1,4 +1,4 @@
-@scenario_outline1
+@scenario_outline1 @smoke_test
 Feature: Scenario_outline
 
   Background: User_goes_to_google
