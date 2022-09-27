@@ -23,9 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d13fda7e-0377-42ae-8444-60b700028212" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/RegressionTestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/SmokeTestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/AppReservationStepDefs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US234503_User_should_be_able_to_reserve_a_car.feature" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../mytestNGproject/configuration.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../mytestNGproject/src/test/java/techproed/tests/Day13_TestNGAnnotation.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../mytestNGproject/src/test/java/techproed/tests/Day14_DependsOnMethods.java" afterDir="false" />
@@ -81,59 +80,30 @@
       <change beforePath="$PROJECT_DIR$/../mycucumberframework3/src/test/resources/features/US1001_user_should_add_data.feature" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/ExcelStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ExcelStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/day19_first_feature_file.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/day19_first_feature_file.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/day20_parameterizing_feature_file.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/day20_parameterizing_feature_file.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/day20_scenario_outline1.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/day20_scenario_outline1.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/day22_excel_automation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/day22_excel_automation.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default_cucumber_report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/failedRerun.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/html-reports/cucumber.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/extent-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/extent.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/day19_first_feature_file.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/day20_customer_login.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/day20_parameterizing_feature_file.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/day20_scenario_outline1.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/day21_data_tables.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/day22_excel_automation.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/day22_failed_scenario_test.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/hooks/Hooks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/GooglePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/HomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LoginPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/FailedScenarioRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/Runner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/AppLoginStepDefs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/ExcelStepDefs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/GoogleStepDefs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/ReusableStepDefs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testdata/mysmoketestdata.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ConfigReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ExcelUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xml-reports/cucumber.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/PdfReport/ExtentPdf.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/Capturing_Screenshot20220924025128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/Capturing_Screenshot20220924030709.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/customer1@bluerentalcars.com20220924025047.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/customer1@bluerentalcars.com20220924030627.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/customer2@bluerentalcars.com20220924025107.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/customer2@bluerentalcars.com20220924030647.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/customer3@bluerentalcars.com20220924025127.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/customer3@bluerentalcars.com20220924030707.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/customer@bluerentalcars.com20220924025026.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/customer@bluerentalcars.com20220924030606.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/embedded1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/embedded2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/failedRerun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/failedRerun.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-reports/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/hooks/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/hooks/Hooks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/GooglePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/GooglePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/FailedScenarioRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/FailedScenarioRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/RegressionTestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/RegressionTestRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/Runner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/SmokeTestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/SmokeTestRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/TestRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/AppLoginStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefinitions/AppLoginStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/ExcelStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefinitions/ExcelStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/GoogleStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefinitions/GoogleStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/ReusableStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefinitions/ReusableStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ConfigReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ConfigReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/Driver$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ExcelUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ExcelUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ReusableMethods.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mycuke/mycuke.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../myjunitproject-21/src/test/java/com/techproed/Day06_JavaFaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myjunitproject-21/src/test/java/com/techproed/Day06_JavaFaker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mymavenproject1/.gitignore" beforeDir="false" />
@@ -219,14 +189,15 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.Runner">
-    <configuration name="Feature: day20_scenario_outline1" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC01_Reservation_Creation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/day20_scenario_outline1.feature" />
-      <option name="GLUE" value="stepdefinitions" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US234503_User_should_be_able_to_reserve_a_car.feature" />
+      <option name="GLUE" value="stepdefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="mycucumberproject" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: day20_scenario_outline1" />
+      <option name="NAME_FILTER" value="^TC01_Reservation_Creation$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC01_Reservation_Creation$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC01_Reservation_Creation" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -311,10 +282,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Runner" />
+        <item itemvalue="Cucumber Java.Scenario: TC01_Reservation_Creation" />
         <item itemvalue="Cucumber Java.Scenario: TC01_login_with_customer" />
         <item itemvalue="JUnit.FailedScenarioRunner" />
         <item itemvalue="Cucumber Java.Scenario: TC_01" />
-        <item itemvalue="Cucumber Java.Feature: day20_scenario_outline1" />
       </list>
     </recent_temporary>
   </component>
@@ -351,33 +322,33 @@
     </state>
     <state x="1479" y="582" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.25.2560.1415/2560.25.1920.1055@0.25.2560.1415" timestamp="1663442927711" />
     <state x="1509" y="582" width="597" height="312" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/72.25.2488.1415/2560.25.1920.1055@72.25.2488.1415" timestamp="1663442521609" />
-    <state width="2297" height="550" key="GridCell.Tab.0.bottom" timestamp="1664112708407">
+    <state width="2352" height="156" key="GridCell.Tab.0.bottom" timestamp="1664242857178">
       <screen x="72" y="25" width="2488" height="1415" />
     </state>
     <state width="2508" height="3" key="GridCell.Tab.0.bottom/0.25.2560.1415/2560.25.1920.1055@0.25.2560.1415" timestamp="1663519594839" />
-    <state width="2508" height="743" key="GridCell.Tab.0.bottom/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1664050397408" />
-    <state width="2297" height="550" key="GridCell.Tab.0.bottom/2560.25.1920.1055/72.25.2488.1415@72.25.2488.1415" timestamp="1664112708407" />
+    <state width="2508" height="116" key="GridCell.Tab.0.bottom/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1664241936605" />
+    <state width="2352" height="156" key="GridCell.Tab.0.bottom/2560.25.1920.1055/72.25.2488.1415@72.25.2488.1415" timestamp="1664242857178" />
     <state width="2436" height="3" key="GridCell.Tab.0.bottom/72.25.2488.1415/2560.25.1920.1055@72.25.2488.1415" timestamp="1663520116086" />
-    <state width="2297" height="550" key="GridCell.Tab.0.center" timestamp="1664112708406">
+    <state width="2352" height="156" key="GridCell.Tab.0.center" timestamp="1664242857177">
       <screen x="72" y="25" width="2488" height="1415" />
     </state>
     <state width="2508" height="3" key="GridCell.Tab.0.center/0.25.2560.1415/2560.25.1920.1055@0.25.2560.1415" timestamp="1663519594838" />
-    <state width="2508" height="743" key="GridCell.Tab.0.center/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1664050397408" />
-    <state width="2297" height="550" key="GridCell.Tab.0.center/2560.25.1920.1055/72.25.2488.1415@72.25.2488.1415" timestamp="1664112708406" />
+    <state width="2508" height="116" key="GridCell.Tab.0.center/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1664241936604" />
+    <state width="2352" height="156" key="GridCell.Tab.0.center/2560.25.1920.1055/72.25.2488.1415@72.25.2488.1415" timestamp="1664242857177" />
     <state width="2436" height="3" key="GridCell.Tab.0.center/72.25.2488.1415/2560.25.1920.1055@72.25.2488.1415" timestamp="1663520116086" />
-    <state width="2297" height="550" key="GridCell.Tab.0.left" timestamp="1664112708405">
+    <state width="2352" height="156" key="GridCell.Tab.0.left" timestamp="1664242857176">
       <screen x="72" y="25" width="2488" height="1415" />
     </state>
     <state width="2508" height="3" key="GridCell.Tab.0.left/0.25.2560.1415/2560.25.1920.1055@0.25.2560.1415" timestamp="1663519594838" />
-    <state width="2508" height="743" key="GridCell.Tab.0.left/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1664050397407" />
-    <state width="2297" height="550" key="GridCell.Tab.0.left/2560.25.1920.1055/72.25.2488.1415@72.25.2488.1415" timestamp="1664112708405" />
+    <state width="2508" height="116" key="GridCell.Tab.0.left/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1664241936603" />
+    <state width="2352" height="156" key="GridCell.Tab.0.left/2560.25.1920.1055/72.25.2488.1415@72.25.2488.1415" timestamp="1664242857176" />
     <state width="2436" height="3" key="GridCell.Tab.0.left/72.25.2488.1415/2560.25.1920.1055@72.25.2488.1415" timestamp="1663520116086" />
-    <state width="2297" height="550" key="GridCell.Tab.0.right" timestamp="1664112708407">
+    <state width="2352" height="156" key="GridCell.Tab.0.right" timestamp="1664242857177">
       <screen x="72" y="25" width="2488" height="1415" />
     </state>
     <state width="2508" height="3" key="GridCell.Tab.0.right/0.25.2560.1415/2560.25.1920.1055@0.25.2560.1415" timestamp="1663519594839" />
-    <state width="2508" height="743" key="GridCell.Tab.0.right/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1664050397408" />
-    <state width="2297" height="550" key="GridCell.Tab.0.right/2560.25.1920.1055/72.25.2488.1415@72.25.2488.1415" timestamp="1664112708407" />
+    <state width="2508" height="116" key="GridCell.Tab.0.right/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1664241936605" />
+    <state width="2352" height="156" key="GridCell.Tab.0.right/2560.25.1920.1055/72.25.2488.1415@72.25.2488.1415" timestamp="1664242857177" />
     <state width="2436" height="3" key="GridCell.Tab.0.right/72.25.2488.1415/2560.25.1920.1055@72.25.2488.1415" timestamp="1663520116086" />
     <state x="697" y="386" key="SettingsEditor" timestamp="1664122904647">
       <screen x="72" y="25" width="2488" height="1415" />

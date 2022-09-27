@@ -17,8 +17,9 @@ import org.junit.runner.RunWith;
         },
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks"},
-//        tags = "@customer_excel",
+        tags = "@reservation_creation",
         dryRun = false
+
 )
 public class Runner {
 }

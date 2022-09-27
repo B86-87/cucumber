@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="22.786">
+<testcase classname="FE3425_Reservation_Feature" name="TC01_Reservation_Creation" time="22.62">
+<failure message="element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;w-100 btn btn-primary btn-lg&quot;&gt;...&lt;/button&gt; is not clickable at point (859, 505). Other element would receive the click: &lt;li&gt;...&lt;/li&gt;&#10;  (Session info: chrome=105.0.5195.125)&#10;Build info: version: '4.4.0', revision: 'e5c75ed026a'&#10;System info: host: 'techproeds-iMac.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_242'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [b30dfb243457be442f83b91b884f60df, clickElement {id=411c34c8-977a-415b-ade2-73ea2249baf2}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/8v/_pmlnm4j4jx...}, goog:chromeOptions: {debuggerAddress: localhost:59728}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59728/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on MAC (b30dfb243457be442f83b91b884f60df)] -&gt; xpath: //button[@type='submit']]&#10;Session ID: b30dfb243457be442f83b91b884f60df" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[Given user opens the URL "https://www.bluerentalcars.com/"..................passed
+When user navigate the login page...........................................passed
+And user enters manager_username and manager_password.......................passed
+Then verify the login is successful.........................................passed
+Then capture the screenshot.................................................passed
+Given user is on the home page..............................................passed
+And select a car model "Kia Rio"............................................passed
+And enter pick up field.....................................................passed
+And enter drop off field....................................................passed
+And enter pick up date......................................................passed
+And enter drop off date.....................................................passed
+And click continue reservation..............................................failed
+And verify complete reservation screen pops up..............................skipped
+And enter card number.......................................................skipped
+And enter name on the card..................................................skipped
+And enter expire date and CVC...............................................skipped
+And checks the agreement....................................................skipped
+And click complete reservation..............................................skipped
+Then verify "Reservation created successfully" pop up.......................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" class="w-100 btn btn-primary btn-lg">...</button> is not clickable at point (859, 505). Other element would receive the click: <li>...</li>
+  (Session info: chrome=105.0.5195.125)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'techproeds-iMac.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_242'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b30dfb243457be442f83b91b884f60df, clickElement {id=411c34c8-977a-415b-ade2-73ea2249baf2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/8v/_pmlnm4j4jx...}, goog:chromeOptions: {debuggerAddress: localhost:59728}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59728/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (b30dfb243457be442f83b91b884f60df)] -> xpath: //button[@type='submit']]
+Session ID: b30dfb243457be442f83b91b884f60df
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at stepdefinitions.AppReservationStepDefs.click_continue_reservation(AppReservationStepDefs.java:73)
+	at ✽.click continue reservation(file:///Users/techproed/IdeaProjects/mycucumberproject/./src/test/resources/features/US234503_User_should_be_able_to_reserve_a_car.feature:20)
+]]></failure>
+</testcase>
+</testsuite>
