@@ -5,14 +5,14 @@ Feature: FE3425_Reservation_Feature
     When user navigate the login page
     And user enters manager_username and manager_password
       |username                     |password  |
-      |customer@bluerentalcars.com  |12345     |
+      |customer2@bluerentalcars.com  |12347      |
     Then verify the login is successful
     Then capture the screenshot
 
     @reservation_creation
   Scenario: TC01_Reservation_Creation
     Given user is on the home page
-    And select a car model "Kia Rio"
+    And select a car model "Ford Kuga"
     And enter pick up field
     And enter drop off field
     And enter pick up date

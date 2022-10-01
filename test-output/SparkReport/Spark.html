@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Sep 26, 2022 08:44:57 PM</span></a>
+<a href="#"><span class="badge badge-primary">Sep 27, 2022 07:21:23 PM</span></a>
 </li>
 </ul>
 </div>
@@ -71,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Sep 26, 2022 08:44:57 PM</h3>
+<h3>Sep 27, 2022 07:21:23 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Sep 26, 2022 08:45:20 PM</h3>
+<h3>Sep 27, 2022 07:22:10 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -148,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='60%'><b>12</b> steps passed</small></div>
+<div><small data-tooltip='65%'><b>13</b> steps passed</small></div>
 <div>
 <small data-tooltip='5%'><b>1</b> steps failed,
-<b>7</b> skipped, <b data-tooltip='%'>0</b> others
+<b>6</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"FE3425_Reservation_Feature":22.515
+"FE3425_Reservation_Feature":45.96
 };
 </script>
 <div class="row">
@@ -218,10 +218,10 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 12,
+passGrandChild: 13,
 failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 7,
+skipGrandChild: 6,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -256,7 +256,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">FE3425_Reservation_Feature</p>
             <p class="text-sm">
-              <span>8:44:57 PM</span> / <span>00:00:22:515</span>
+              <span>7:21:24 PM</span> / <span>00:00:45:960</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -265,9 +265,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">FE3425_Reservation_Feature</h5>
-<span class='badge badge-success'>09.26.2022 8:44:57 PM</span>
-<span class='badge badge-danger'>09.26.2022 8:45:20 PM</span>
-<span class='badge badge-default'>00:00:22:515</span>
+<span class='badge badge-success'>09.27.2022 7:21:24 PM</span>
+<span class='badge badge-danger'>09.27.2022 7:22:10 PM</span>
+<span class='badge badge-default'>00:00:45:960</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -344,18 +344,29 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step fail-bg" title="stepdefinitions.AppReservationStepDefs.click_continue_reservation()">
+              <div class="step pass-bg" title="stepdefinitions.AppReservationStepDefs.click_continue_reservation()">
                 <span>And click continue reservation</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" class="w-100 btn btn-primary btn-lg">...</button> is not clickable at point (859, 505). Other element would receive the click: <li>...</li>
-  (Session info: chrome=105.0.5195.125)
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinitions.AppReservationStepDefs.verify_complete_reservation_screen_pops_up()">
+                <span>And verify complete reservation screen pops up</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[text()='Complete Reservation']' (tried for 3 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at utilities.ReusableMethods.waitForVisibility(ReusableMethods.java:94)
+	at stepdefinitions.AppReservationStepDefs.verify_complete_reservation_screen_pops_up(AppReservationStepDefs.java:85)
+	at ✽.verify complete reservation screen pops up(file:///Users/techproed/IdeaProjects/mycucumberproject/./src/test/resources/features/US234503_User_should_be_able_to_reserve_a_car.feature:21)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Complete Reservation']"}
+  (Session info: chrome=106.0.5249.61)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'techproeds-iMac.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_242'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b30dfb243457be442f83b91b884f60df, clickElement {id=411c34c8-977a-415b-ade2-73ea2249baf2}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/8v/_pmlnm4j4jx...}, goog:chromeOptions: {debuggerAddress: localhost:59728}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59728/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (b30dfb243457be442f83b91b884f60df)] -> xpath: //button[@type='submit']]
-Session ID: b30dfb243457be442f83b91b884f60df
+Command: [85caf050da910c0008da87afbce0cd0b, findElement {using=xpath, value=//div[text()='Complete Reservation']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.61, chrome: {chromedriverVersion: 106.0.5249.21 (71f4e2c9a6f3..., userDataDir: /var/folders/8v/_pmlnm4j4jx...}, goog:chromeOptions: {debuggerAddress: localhost:55426}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55426/devtoo..., se:cdpVersion: 106.0.5249.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 85caf050da910c0008da87afbce0cd0b
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -367,23 +378,71 @@ Session ID: b30dfb243457be442f83b91b884f60df
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy23.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at utilities.ReusableMethods.waitForVisibility(ReusableMethods.java:94)
+	at stepdefinitions.AppReservationStepDefs.verify_complete_reservation_screen_pops_up(AppReservationStepDefs.java:85)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy23.click(Unknown Source)
-	at stepdefinitions.AppReservationStepDefs.click_continue_reservation(AppReservationStepDefs.java:73)
-	at ✽.click continue reservation(file:///Users/techproed/IdeaProjects/mycucumberproject/./src/test/resources/features/US234503_User_should_be_able_to_reserve_a_car.feature:20)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
+	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
+	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
+	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)
 </textarea>
       
-      </div>
-              </div>
-              <div class="step skip-bg" title="stepdefinitions.AppReservationStepDefs.verify_complete_reservation_screen_pops_up()">
-                <span>And verify complete reservation screen pops up</span>
-      <div>Step skipped
       </div>
               </div>
               <div class="step skip-bg" title="stepdefinitions.AppReservationStepDefs.enter_card_number()">
@@ -474,7 +533,7 @@ Session ID: b30dfb243457be442f83b91b884f60df
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>20:44:57 PM</td>
+<td>19:21:24 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>TC01_Reservation_Creation</a>
 <div class="">
@@ -507,12 +566,12 @@ Session ID: b30dfb243457be442f83b91b884f60df
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+<p class="name">org.openqa.selenium.TimeoutException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+<h4>org.openqa.selenium.TimeoutException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -526,11 +585,11 @@ Session ID: b30dfb243457be442f83b91b884f60df
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>20:45:17 PM</td>
+<td>19:21:48 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='14'>And click continue reservation</a>
+<a href="#" class="linked" test-id='1' id='15'>And verify complete reservation screen pops up</a>
 <div class="">
-<span class="badge badge-default">FE3425_Reservation_Feature.TC01_Reservation_Creation.And click continue reservation</span>
+<span class="badge badge-default">FE3425_Reservation_Feature.TC01_Reservation_Creation.And verify complete reservation screen pops up</span>
 </div>
 </td>
 </tr>

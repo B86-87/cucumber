@@ -1,0 +1,49 @@
+JDBC NOTES:
+1. JDBC is an API to work with the Databases
+   JDBC = Java DataBase Connectivity
+
+2. We use JDBC to automate data base testing
+    - Connection -> connect to the DB
+    - Statement  -> execute queries
+    - ResultSet  -> get the result and do assertions
+    - We have most of the ready steps that utilize these objects in out DBUtils class.
+
+ 3. Our Data is PostGreSQL
+         <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+         <dependency>
+             <groupId>org.postgresql</groupId>
+             <artifactId>postgresql</artifactId>
+             <version>42.5.0</version>
+         </dependency>
+
+ 4. We use DBUtils for automation the test cases. DBUtil is in our utilities package.
+
+ 5. In our cucumber automation framework, we can do database automation testing.
+    We have a separate feature files that has database related automation scripts.
+    In fact, we have a lot of reusable steps that makes the automation stable.
+    I mostly change the table names, or column names, or data names to create new test cases.
+
+ 6. We do DB automation
+    -When user register from the UI, then the user information must be correctly stored in the right table in the database
+    -When user makes a car reservation from UI, then the user car reservation must be correctly the right table in the database
+    --------
+    -When a tester/dev creates a data from the database(using JDBC or other tools),then the information should be visible on the UI
+    -When a tester/dev update a data from the database(using JDBC or other tools),then the information should be updated on the UI
+    -When a tester/dev deleted a data from the database(using JDBC or other tools),then the information should be deleted on the UI
+
+7. Automation Steps:
+    - add postgreSQL dependency
+    - create feature file-> connect, statement, result set
+        - make sure to create reusable feature files by using "", or scenario outline, data tables
+    - write the step-definitions
+
+
+8. Common UTIL methods we used:
+    - DBUtils.createConnection();               -> to connect to the DB
+    - DBUtils.executeQuery(query);              -> to execute SQL queries
+    - DBUtils.getResultset().next();            -> goes to the next row
+    - DBUtils.getResultset().getObject(column); -> returns the column data as an object
+    - DBUtils.getResultset().getString(column); -> returns the columns data as a String
+    - DBUtils.getRowCount();                    -> returns the row count on a table
+    - DBUtils.closeConnection();                -> closed the open connections
+    - DBUtils.getColumnData(query,column);      -> returns ALL of the column data

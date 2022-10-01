@@ -45,6 +45,29 @@ public class HomePage {
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement continueReservation;
 
+    @FindBy(xpath = "//div[text()='Complete Reservation']")
+    public WebElement completeReservationPage;
+
+    @FindBy(xpath = "//input[@name='cardNo']")
+    public WebElement cardNumber;
+    @FindBy(xpath = "//input[@name='nameOnCard']")
+    public WebElement nameOnTheCard;
+    @FindBy(xpath = "//input[@name='expireDate']")
+    public WebElement expireDate;
+    @FindBy(xpath = "//input[@name='cvc']")
+    public WebElement CVC;
+    @FindBy(xpath = "//input[@name='contract']")
+    public WebElement agreementCheckBox;
+    @FindBy(xpath = "(//button[@type='submit'])[last()]")
+    public WebElement completeReservation;
+    @FindBy(xpath = "(//div[@class='modal-footer']//button[@type='button'])")
+    public WebElement closeButton;
+    @FindBy(xpath =" //*[.='Reservation created successfully']")
+    public WebElement reservationSuccess;
+
+
+
+
 
 
 //    In Page Object Model, we can create important core methods
