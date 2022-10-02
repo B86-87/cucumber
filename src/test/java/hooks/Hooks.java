@@ -1,18 +1,23 @@
 package hooks;
 
 import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import org.junit.Assume;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
 
 public class Hooks {
 
-//    @Before
-//    public void setUp(){
-////        RUNS BEFORE EACH SCENARIO
-//        System.out.println("Before Hooks");
-//    }
+//    SKIPPING THE TAG THAT IS IN THE BEFORE ANNOTATION
+//    IN THIS EXAMPLE @skip_scenario tagged scenarios will be skipped
+    @Before(value = "@skip_scenario")
+    public void setUp(Scenario scenario){
+//        RUNS BEFORE EACH SCENARIO
+        System.out.println("SKIPPED : "+scenario.getName());
+        Assume.assumeTrue(false);//
+    }
 
     @After
     public void tearDown(Scenario scenario){

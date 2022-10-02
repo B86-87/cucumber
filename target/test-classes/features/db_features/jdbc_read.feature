@@ -68,7 +68,7 @@ Feature: db_customer_information
 
     #    verify user account > account type contains : SAVING, CREDIT_CARD, CHECKING, INVESTING
   @verify_account_types_SA
-  Scenario Outline: TC09_verify_user_account_types
+  Scenario Outline: TC10_verify_user_account_types
     And user gets the column "*" from table "tp_account"
     Then verify table "tp_account" and column "account_type" contains data "<data>"
     Then user close the connection
@@ -81,7 +81,7 @@ Feature: db_customer_information
     |INVESTING   |
 
 #
-  Scenario: TC_10_get_column_names
+  Scenario: TC_11_get_column_names
     And user gets the column "*" from table "tp_account"
     Then verify the columns names from table "tp_account" contains data "balance"
 

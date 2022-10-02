@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Sep 27, 2022 07:21:23 PM</span></a>
+<a href="#"><span class="badge badge-primary">Oct 2, 2022 02:15:29 PM</span></a>
 </li>
 </ul>
 </div>
@@ -57,11 +57,6 @@
 <span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
-</a>
-</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -71,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Sep 27, 2022 07:21:23 PM</h3>
+<h3>Oct 2, 2022 02:15:29 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Sep 27, 2022 07:22:10 PM</h3>
+<h3>Oct 2, 2022 02:15:48 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -89,7 +84,7 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -110,8 +105,8 @@
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>1</b> features failed,
-<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>1</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -128,10 +123,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div><small data-tooltip='50%'><b>1</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='100%'><b>1</b> scenarios failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>1</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -148,10 +143,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='65%'><b>13</b> steps passed</small></div>
+<div><small data-tooltip='50%'><b>4</b> steps passed</small></div>
 <div>
-<small data-tooltip='5%'><b>1</b> steps failed,
-<b>6</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>4</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -167,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"FE3425_Reservation_Feature":45.96
+"Search Feature":18.326
 };
 </script>
 <div class="row">
@@ -177,12 +172,44 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@reservation_creation</td>
+<td>@skip_scenario</td>
+<td>0</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@teapot</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
 <td>0</td>
 <td>0%</td>
+</tr>
+<tr>
+<td>@smoke_test</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>@google_search</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>@iphone</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -208,20 +235,20 @@ var timeline = {
 var statusGroup = {
 parentCount: 5,
 passParent: 0,
-failParent: 1,
+failParent: 0,
 warningParent: 0,
-skipParent: 0,
+skipParent: 1,
 childCount: 5,
-passChild: 0,
-failChild: 1,
+passChild: 1,
+failChild: 0,
 warningChild: 0,
-skipChild: 0,
+skipChild: 1,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 13,
-failGrandChild: 1,
+passGrandChild: 4,
+failGrandChild: 0,
 warningGrandChild: 0,
-skipGrandChild: 6,
+skipGrandChild: 4,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -235,7 +262,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -243,31 +270,31 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@reservation_creation</a>
+<a class="dropdown-item" href="#">@skip_scenario</a><a class="dropdown-item" href="#">@teapot</a><a class="dropdown-item" href="#">@smoke_test</a><a class="dropdown-item" href="#">@google_search</a><a class="dropdown-item" href="#">@iphone</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="skip" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">FE3425_Reservation_Feature</p>
+            <p class="name">Search Feature</p>
             <p class="text-sm">
-              <span>7:21:24 PM</span> / <span>00:00:45:960</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>2:15:29 PM</span> / <span>00:00:18:326</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">FE3425_Reservation_Feature</h5>
-<span class='badge badge-success'>09.27.2022 7:21:24 PM</span>
-<span class='badge badge-danger'>09.27.2022 7:22:10 PM</span>
-<span class='badge badge-default'>00:00:45:960</span>
+<h5 class="test-status text-skip">Search Feature</h5>
+<span class='badge badge-success'>10.02.2022 2:15:29 PM</span>
+<span class='badge badge-danger'>10.02.2022 2:15:48 PM</span>
+<span class='badge badge-default'>00:00:18:326</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -279,211 +306,60 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>TC01_Reservation_Creation</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC01_iphone_search</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefs.user_is_on_the_google_page()">
+                <span>Given user is on the google page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefs.user_search_for_i_phone_on_google()">
+                <span>When user search for iPhone on google</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefs.verify_the_page_title_contains_i_phone()">
+                <span>Then verify the page title contains iPhone</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefs.close_the_application()">
+                <span>Then close the application</span>
+      <div>
+      </div>
+              </div>
           </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="8"><span class="badge log skip-bg mr-2">Skip</span>TC02_teapot_search</div>
       </div>
     </div>
         <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefs.user_opens_the_url(java.lang.String)">
-                <span>Given user opens the URL "https://www.bluerentalcars.com/"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.AppLoginStepDefs.user_navigate_the_login_page()">
-                <span>When user navigate the login page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.AppLoginStepDefs.user_enters_manager_username_and_manager_password(io.cucumber.datatable.DataTable)">
-                <span>And user enters manager_username and manager_password</span>
-      <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>customer@bluerentalcars.com</td><td>12345</td></tr></table>
-      </div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.AppLoginStepDefs.verify_the_login_is_successful()">
-                <span>Then verify the login is successful</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.ReusableStepDefs.capture_the_screenshot()">
-                <span>Then capture the screenshot</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.AppReservationStepDefs.user_is_on_the_home_page()">
-                <span>Given user is on the home page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.AppReservationStepDefs.select_a_car_model(java.lang.String)">
-                <span>And select a car model "Kia Rio"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.AppReservationStepDefs.enter_pick_up_field()">
-                <span>And enter pick up field</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.AppReservationStepDefs.enter_drop_off_field()">
-                <span>And enter drop off field</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.AppReservationStepDefs.enter_pick_up_date()">
-                <span>And enter pick up date</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.AppReservationStepDefs.enter_drop_off_date()">
-                <span>And enter drop off date</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.AppReservationStepDefs.click_continue_reservation()">
-                <span>And click continue reservation</span>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="stepdefinitions.AppReservationStepDefs.verify_complete_reservation_screen_pops_up()">
-                <span>And verify complete reservation screen pops up</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[text()='Complete Reservation']' (tried for 3 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at utilities.ReusableMethods.waitForVisibility(ReusableMethods.java:94)
-	at stepdefinitions.AppReservationStepDefs.verify_complete_reservation_screen_pops_up(AppReservationStepDefs.java:85)
-	at ✽.verify complete reservation screen pops up(file:///Users/techproed/IdeaProjects/mycucumberproject/./src/test/resources/features/US234503_User_should_be_able_to_reserve_a_car.feature:21)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Complete Reservation']"}
-  (Session info: chrome=106.0.5249.61)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'techproeds-iMac.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_242'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [85caf050da910c0008da87afbce0cd0b, findElement {using=xpath, value=//div[text()='Complete Reservation']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.61, chrome: {chromedriverVersion: 106.0.5249.21 (71f4e2c9a6f3..., userDataDir: /var/folders/8v/_pmlnm4j4jx...}, goog:chromeOptions: {debuggerAddress: localhost:55426}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55426/devtoo..., se:cdpVersion: 106.0.5249.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 85caf050da910c0008da87afbce0cd0b
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy23.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	at utilities.ReusableMethods.waitForVisibility(ReusableMethods.java:94)
-	at stepdefinitions.AppReservationStepDefs.verify_complete_reservation_screen_pops_up(AppReservationStepDefs.java:85)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
-	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
-	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
-	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)
-</textarea>
-      
-      </div>
-              </div>
-              <div class="step skip-bg" title="stepdefinitions.AppReservationStepDefs.enter_card_number()">
-                <span>And enter card number</span>
+              <div class="step skip-bg" title="stepdefinitions.GoogleStepDefs.user_is_on_the_google_page()">
+                <span>Given user is on the google page</span>
       <div>Step skipped
       </div>
               </div>
-              <div class="step skip-bg" title="stepdefinitions.AppReservationStepDefs.enter_name_on_the_card()">
-                <span>And enter name on the card</span>
+              <div class="step skip-bg" title="stepdefinitions.GoogleStepDefs.user_search_for_tea_pot_on_google()">
+                <span>When user search for TeaPot on google</span>
       <div>Step skipped
       </div>
               </div>
-              <div class="step skip-bg" title="stepdefinitions.AppReservationStepDefs.enter_expire_date_and_cvc()">
-                <span>And enter expire date and CVC</span>
+              <div class="step skip-bg" title="stepdefinitions.GoogleStepDefs.verify_the_page_title_contains_tea_pot()">
+                <span>Then verify the page title contains TeaPot</span>
       <div>Step skipped
       </div>
               </div>
-              <div class="step skip-bg" title="stepdefinitions.AppReservationStepDefs.checks_the_agreement()">
-                <span>And checks the agreement</span>
+              <div class="step skip-bg" title="stepdefinitions.GoogleStepDefs.close_the_application()">
+                <span>Then close the application</span>
       <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="stepdefinitions.AppReservationStepDefs.click_complete_reservation()">
-                <span>And click complete reservation</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="stepdefinitions.AppReservationStepDefs.verify_pop_up(java.lang.String)">
-                <span>Then verify "Reservation created successfully" pop up</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>hooks.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>failed_scenario
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../embedded1.png' src="../embedded1.png">
-    
-    </div></div>
-</div>
-      <div>
       </div>
               </div>
           </div>
@@ -505,22 +381,22 @@ Session ID: 85caf050da910c0008da87afbce0cd0b
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">5</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-skip'>1</span>
 </span>
-<p class="name">@reservation_creation</p>
+<p class="name">@skip_scenario</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@reservation_creation</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<h4>@skip_scenario</h4>
+<span status="skip" class='badge log badge-skip'>1 skipped</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -531,13 +407,13 @@ Session ID: 85caf050da910c0008da87afbce0cd0b
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:21:24 PM</td>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:15:48 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC01_Reservation_Creation</a>
+<a href="#" class="linked" test-id='1' id='8'>TC02_teapot_search</a>
 <div class="">
-<span class="badge badge-default">FE3425_Reservation_Feature.TC01_Reservation_Creation</span>
+<span class="badge badge-default">Search Feature.TC02_teapot_search</span>
 </div>
 </td>
 </tr>
@@ -545,34 +421,18 @@ Session ID: 85caf050da910c0008da87afbce0cd0b
 </table>
 </div>
 </li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-skip'>1</span>
 </span>
-<p class="name">org.openqa.selenium.TimeoutException</p>
+<p class="name">@teapot</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.TimeoutException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<h4>@teapot</h4>
+<span status="skip" class='badge log badge-skip'>1 skipped</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -583,13 +443,145 @@ Session ID: 85caf050da910c0008da87afbce0cd0b
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:21:48 PM</td>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:15:48 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='15'>And verify complete reservation screen pops up</a>
+<a href="#" class="linked" test-id='1' id='8'>TC02_teapot_search</a>
 <div class="">
-<span class="badge badge-default">FE3425_Reservation_Feature.TC01_Reservation_Creation.And verify complete reservation screen pops up</span>
+<span class="badge badge-default">Search Feature.TC02_teapot_search</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-skip'>1</span>
+</span>
+<p class="name">@smoke_test</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@smoke_test</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="skip" class='badge log badge-skip'>1 skipped</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:15:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>TC01_iphone_search</a>
+<div class="">
+<span class="badge badge-default">Search Feature.TC01_iphone_search</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:15:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>TC02_teapot_search</a>
+<div class="">
+<span class="badge badge-default">Search Feature.TC02_teapot_search</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-skip'>1</span>
+</span>
+<p class="name">@google_search</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@google_search</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="skip" class='badge log badge-skip'>1 skipped</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:15:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>TC01_iphone_search</a>
+<div class="">
+<span class="badge badge-default">Search Feature.TC01_iphone_search</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>14:15:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>TC02_teapot_search</a>
+<div class="">
+<span class="badge badge-default">Search Feature.TC02_teapot_search</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@iphone</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@iphone</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:15:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>TC01_iphone_search</a>
+<div class="">
+<span class="badge badge-default">Search Feature.TC01_iphone_search</span>
 </div>
 </td>
 </tr>
