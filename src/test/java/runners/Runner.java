@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
         },
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks"},
-        tags = "@google_search and not teapot",
+        tags = "@google_search",
         dryRun = false
 
 )
