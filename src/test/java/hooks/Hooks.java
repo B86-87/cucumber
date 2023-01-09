@@ -16,7 +16,7 @@ public class Hooks {
     public void setUp(Scenario scenario){
 //        RUNS BEFORE EACH SCENARIO
         System.out.println("SKIPPED : "+scenario.getName());
-        Assume.assumeTrue(false);//
+        Assume.assumeTrue(false);//skipped
     }
 
     @After

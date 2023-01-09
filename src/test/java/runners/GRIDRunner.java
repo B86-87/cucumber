@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         },
         features = "./src/test/resources/features/grid_features",
         glue = {"stepdefinitions"},
-        tags = "@cross_browser_testing",
+        tags = "@grid_chrome and @grid_firefox",
         dryRun = false
 )
 public class GRIDRunner {

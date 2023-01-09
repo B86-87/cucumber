@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="1" tests="2" time="18.581">
-<testcase classname="Search Feature" name="TC01_iphone_search" time="18.4">
-<system-out><![CDATA[Given user is on the google page............................................passed
-When user search for iPhone on google.......................................passed
-Then verify the page title contains iPhone..................................passed
-Then close the application..................................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.149">
+<testcase classname="Search Feature" name="TC02_" time="6.023">
+<system-out><![CDATA[When user open "https://www.google.com/" page and search "Hello World" text.passed
 ]]></system-out>
-</testcase>
-<testcase classname="Search Feature" name="TC02_teapot_search" time="0.01">
-<skipped message="org.junit.AssumptionViolatedException: got: &lt;false&gt;, expected: is &lt;true&gt;&#10;&#9;at org.junit.Assume.assumeThat(Assume.java:106)&#10;&#9;at org.junit.Assume.assumeTrue(Assume.java:50)&#10;&#9;at hooks.Hooks.setUp(Hooks.java:19)&#10;"><![CDATA[Given user is on the google page............................................skipped
-When user search for TeaPot on google.......................................skipped
-Then verify the page title contains TeaPot..................................skipped
-Then close the application..................................................skipped
-
-StackTrace:
-org.junit.AssumptionViolatedException: got: <false>, expected: is <true>
-	at org.junit.Assume.assumeThat(Assume.java:106)
-	at org.junit.Assume.assumeTrue(Assume.java:50)
-	at hooks.Hooks.setUp(Hooks.java:19)
-]]></skipped>
 </testcase>
 </testsuite>
